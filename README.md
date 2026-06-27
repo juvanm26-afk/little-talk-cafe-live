@@ -1,35 +1,25 @@
-# Little Talk Cafe — V36 Fix Favicon Build
+# Little Talk Cafe — V37 Circle Tab Icon Patch
 
-This patch fixes the Netlify build error caused by the favicon.
+This patch changes the browser tab logo/favicon from a square version to a circular version.
 
-## Fixed
+## Files included
 
-- Replaces app/favicon.ico with a proper RGBA favicon
-- Keeps app/icon.png
-- Keeps app/apple-icon.png
-
-## Error fixed
-
-Netlify error:
-
-```txt
-./app/favicon.ico
-Processing image failed
-The PNG is not in RGBA format
-```
+- app/favicon.ico
+- app/icon.png
+- app/apple-icon.png
 
 ## Apply patch
 
-Copy the patch contents into your live project folder with `package.json`, replace files, then run locally if you want:
+Copy the patch contents into your live project folder with `package.json`, replace files, then in GitHub Desktop:
 
-```bash
-npm.cmd run build
-```
+Commit message: Make favicon circular
 
-Then commit and push in GitHub Desktop:
-
-```txt
-Commit message: Fix favicon build error
-```
+Then click:
+- Commit to main
+- Push origin
 
 Netlify should redeploy automatically.
+
+## Note
+
+Favicons cache a lot, so if the old square icon still shows, hard refresh or open the site in an incognito/private window.
