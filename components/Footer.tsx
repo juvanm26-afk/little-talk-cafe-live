@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SocialLinks } from "@/components/SocialLinks";
 
 export function Footer() {
   return (
@@ -17,6 +18,7 @@ export function Footer() {
             A cosy independent café in Leigh-on-Sea for freshly prepared food,
             proper coffee, private events and special gatherings.
           </p>
+          <SocialLinks />
         </div>
         <div>
           <h3>Find us</h3>

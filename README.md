@@ -1,23 +1,31 @@
-# Little Talk Cafe — V34 Favicon / Tab Logo
+# Little Talk Cafe — V35 Social Links
 
-This patch changes the browser tab logo using the Little Talk Cafe logo.
+This patch adds social/order links to the website.
 
-## Files added
+## Added
 
-- app/favicon.ico
-- app/icon.png
-- app/apple-icon.png
+- Instagram
+- Facebook
+- Tripadvisor
+- Deliveroo
+
+## Where they appear
+
+- Footer
+- Small section on the Contact page
 
 ## Apply patch
 
-Copy the patch contents into your real project folder with `package.json`, replace files, then run:
+Copy the patch contents into your live project folder with `package.json`, replace files, then run:
 
 ```bash
 npm.cmd run dev
 ```
 
-## After applying
+Then commit and push in GitHub Desktop:
 
-Push the change to GitHub Desktop, then Netlify should redeploy.
+```txt
+Commit message: Add social links
+```
 
-Note: Browser tab icons can be cached. If you still see the old icon, hard refresh or check in a private/incognito window.
+Netlify should redeploy automatically.
