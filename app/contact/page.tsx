@@ -3,7 +3,6 @@ import Link from "next/link";
 import { CalendarHeart, Clock, Mail, MapPin, Phone, Send, Users } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { SmartForm } from "@/components/SmartForm";
-import { SocialLinks } from "@/components/SocialLinks";
 
 export const metadata: Metadata = {
   title: "Contact & Reservations",
@@ -48,33 +47,6 @@ export default function ContactPage() {
           <span>Address</span>
           <strong>1090 London Rd, Leigh-on-Sea</strong>
         </a>
-      </section>
-
-      <section
-        aria-label="Follow Little Talk Cafe"
-        style={{
-          maxWidth: "1120px",
-          margin: "0 auto 1.2rem",
-          padding: "1rem clamp(1rem, 4vw, 4.5rem)",
-          display: "flex",
-          flexWrap: "wrap",
-          alignItems: "center",
-          justifyContent: "space-between",
-          gap: "1rem",
-          color: "var(--cream)",
-          background: "var(--ink)",
-          borderRadius: "28px"
-        }}
-      >
-        <div>
-          <p className="eyebrow" style={{ marginBottom: ".35rem", color: "var(--gold)" }}>
-            Follow & order
-          </p>
-          <p style={{ margin: 0, color: "rgba(248,239,227,.78)", lineHeight: 1.6 }}>
-            Find Little Talk Cafe on social media, reviews and delivery.
-          </p>
-        </div>
-        <SocialLinks compact />
       </section>
 
       <section className="contactMainGrid">

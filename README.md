@@ -1,25 +1,27 @@
-# Little Talk Cafe — V37 Circle Tab Icon Patch
+# Little Talk Cafe — V39 Remove Contact Social Section
 
-This patch changes the browser tab logo/favicon from a square version to a circular version.
+This patch removes the Instagram/Facebook/Tripadvisor/Deliveroo social section from the Contact page only.
 
-## Files included
+## What stays
 
-- app/favicon.ico
-- app/icon.png
-- app/apple-icon.png
+- Footer social icons stay
+- SocialLinks component stays
+- Footer stays unchanged
+
+## What is removed
+
+- The small "Follow & order" section on the Contact page
 
 ## Apply patch
 
-Copy the patch contents into your live project folder with `package.json`, replace files, then in GitHub Desktop:
+Copy the patch contents into your live project folder with `package.json`, replace files, then run:
 
-Commit message: Make favicon circular
+```bash
+npm.cmd run dev
+```
 
-Then click:
-- Commit to main
-- Push origin
+Then commit and push in GitHub Desktop:
 
-Netlify should redeploy automatically.
-
-## Note
-
-Favicons cache a lot, so if the old square icon still shows, hard refresh or open the site in an incognito/private window.
+```txt
+Remove contact social section
+```
